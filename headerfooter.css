@@ -1,0 +1,196 @@
+*{
+    margin: 0;
+}
+h2{
+    font-size: 1rem;
+    margin: 1rem 0;
+}
+
+
+                                        /*Header*/ /*
+header nav{
+    background-color: #f8eee1;
+    padding: 10px 0;
+    text-align: center;
+    position: sticky;
+}
+
+header nav a{
+    text-decoration: none;
+    color: black;
+    padding: 1rem 1.6rem;
+    font-size: 1.2rem;
+}
+*/ /*Dropdown*/
+
+header{
+    top:0;
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+    background-color: #f8eee1;
+    position: sticky; /*headeren er sticky*/
+    top: 0; /*ikke noget whitespace mellem header og toppen af siden*/
+    justify-content: center;
+    height: 3%;
+    z-index: 10; 
+}
+#laptopnav{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    gap: 3rem;
+   
+}
+
+header img{
+    margin: 0px;
+    padding: 0px;
+    width: 55px;
+}
+
+/*
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+    */
+
+header a{
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'InterBold', sans-serif;
+}
+
+header a:hover{
+    text-shadow: 2px 4px 4px #faf7f7; /* Shadow effect on hover */
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Style for the dropdown container */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    position: relative;
+}
+
+nav a {
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    text-align: center;
+    justify-content: center;
+}
+
+/* Style for the dropdown link */
+nav .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+/* Skjul dropdown menuen som default *//*
+nav .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #FCB9B5;
+    min-width: 160px;
+    z-index: 4;
+}
+*/
+
+nav .dropdown-content li {
+    display: block;
+    text-align: left;
+}
+
+nav .dropdown-content li a {
+    padding: 8px 16px;
+
+}
+
+
+
+
+
+
+
+
+                                    
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    position: relative;
+}
+
+nav a {
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+}
+
+/* Style for the dropdown link */
+nav .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Skjul dropdown menuen som default */
+nav .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    min-width: 160px;
+    z-index: 4;
+}
+
+nav .dropdown-content li {
+    display: block;
+    text-align: left;
+}
+
+nav .dropdown-content li a {
+    padding: 8px 16px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    background-color: #f8eee1;
+    display: flex;
+
+}
+
+footer div{
+    width: 100%;
+    display: flex;
+    padding: 1rem 5rem;
+    gap: 20rem;
+}
+
+footer div a{
+    color: black;
+
+}
