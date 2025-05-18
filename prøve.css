@@ -1,13 +1,8 @@
 *{
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-h2{
-    font-size: 1rem;
-    margin: 1rem 0;
-}
-
-
-                                        /*Header*/
 
 
 header{
@@ -25,10 +20,6 @@ header{
     align-items: center;
     justify-content:center;
     gap: 3rem;
-    padding-left: 9%;
-    padding-right: 1%;
-    width: 100%;
-
 }
 
 
@@ -40,10 +31,8 @@ header img{
 }
 
 header div img{
-    width: 35%;
+    width: 20%;
     top: 0;
-    margin-left: 60px;
-    margin-right: 70px;
     
 }
 
@@ -53,7 +42,7 @@ header a{
     
     font-size: 16px;
     font-weight: bold;
-    
+    font-family: 'InterBold', sans-serif;
 }
 
 header a:hover{
@@ -75,7 +64,7 @@ nav ul li {
 
 nav a {
     text-decoration: none;
-    padding: 15px;
+    padding: 10px;
     display: block;
     text-align: center;
     justify-content: center;
@@ -150,6 +139,120 @@ nav .dropdown-content li {
 nav .dropdown-content li a {
     padding: 8px 16px;
 }
+
+
+/*Forside*/
+
+.fittyfitty, .fittyfitty2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    background-image: url(images/elipselysbeige.png);
+    background-size: cover;
+    
+    background-repeat: no-repeat;
+}
+
+.fittyfitty h2, .fittyfitty2 h2{ 
+    font-family: 'InterMedium', sans-serif;
+    color: #000000;
+    margin-top: 3%; 
+}
+
+.fittyfitty h3, .fittyfitty2 h3{
+    font-family: 'InterMedium', sans-serif;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.fittyfitty p, .fittyfitty2 p{
+    font-family: 'Interregular', sans-serif;
+    color: #000000; 
+    font-size: 17px;
+    line-height: 1.7;
+    margin-top: 5%;
+} 
+
+.fittyfitty ul, .fittyfitty2 ul{
+    font-family: 'Interregular', sans-serif;
+    list-style-type:disc;
+    margin-left: 2.5%;
+}
+
+.fittyfitty section{
+    padding-top: 4%;
+    padding-bottom: 4%;
+    padding-left: 5%;
+    width: 40%;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.fittyfitty div{
+    padding-top: 4%;
+    padding-right: 5%;
+    padding-bottom: 4%;
+    width: 40%;
+    margin-top: 2%;
+    
+}
+
+
+.fittyfitty div img, .fittyfitty2 div img{
+    width: 100%;
+
+}
+
+.fittyfitty2 section{
+    padding-top: 4%;
+    padding-bottom: 4%;
+    padding-right: 5%;
+    width: 50%;
+}
+
+
+.fittyfitty2 div{
+    padding-top: 4%;
+    padding-left: 5%;
+    padding-bottom: 4%;
+    width: 40%;
+    margin-top: 2%;
+}
+
+
+
+/*Generelle regler*/
+
+#knap, #knap2{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 100%
+}   
+#knap a, #knap2 a{
+    position: relative;
+    background-color: #06550c;
+    color:white;
+    text-decoration: none;
+    border-radius: 15rem;
+    padding: 1rem 3rem;
+    box-shadow: rgb(0, 0, 0, 0.5) 0px 5px 10px;
+    text-transform: uppercase;
+    font-family: 'InterRegular', sans-serif; 
+    transform: scale(1);
+    text-align: center;
+}
+#knap a:hover, #knap2 a:hover{
+    background-color: #EB5351;
+  
+}
+#knap:hover, #knap2:hover{
+    transition: transform 0.5s ease;
+    transform: scale(1.05);
+}
+
 
 
 

@@ -4,12 +4,12 @@
     box-sizing: border-box;
  
 }
-h2{
-    font-size: 1rem;
-    margin: 1rem 0;
-}
+
+
+
+
 p{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Interregular', sans-serif;
 }
 
                             /*Forside*/
@@ -21,11 +21,174 @@ p{
     display: flex;
     width: 100%;
 }
+.anbefalinger h2{
+    font-size: 1.5rem;
+}
 
 .anbefalinger img{
     width: 100%;
     padding: 1rem;
 }
+
+.anmeldelser{
+    display: flex;
+    width: 95%;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #e2f6fb;
+    margin-left: 2rem;    
+    margin-right: 2rem;
+    margin-top: 5rem;
+    
+}
+
+.anmeldelser img{
+    width: 50%;
+}
+.anmeldelser div h2, .anmeldelser div p{
+    margin-top: 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    width: 50%;
+    padding-left: 2rem;
+}
+
+.anmeldelser div{
+    padding-top: 3rem;
+}
+.pilhøjre img{
+    padding-top: 11rem;
+    padding-left: 10px;
+}
+
+
+/*Afsnit*/
+.fittyfitty{
+    background-image: url(images/elipselysbeige4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 5rem;
+    padding-top: 10%;
+}
+
+.fittyfitty2{
+    background-color: #e4d4bf;
+    margin-top:10%;
+}
+.fittyfitty, .fittyfitty2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    
+}
+
+.fittyfitty h2, .fittyfitty2 h2{
+    color: #000000;
+    margin-top: 3%; 
+    font-size: 1.5rem;
+}
+
+.fittyfitty h3, .fittyfitty2 h3{
+    font-family: 'InterMedium', sans-serif;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.fittyfitty p, .fittyfitty2 p{
+    font-family: 'Interregular', sans-serif;
+    color: #000000; 
+    font-size: 17px;
+    line-height: 1.7;
+    margin-top: 5%;
+} 
+
+
+.fittyfitty section, .fittyfitty2 section{
+    padding-top: 4%;
+    padding-bottom: 4%;
+    padding-left: 5%;
+    width: 40%;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.fittyfitty div{
+    padding-top: 4%;
+    padding-right: 5%;
+    padding-bottom: 4%;
+    width: 40%;
+    margin-top: 2%;
+    
+}
+
+
+.fittyfitty div img, .fittyfitty2 div img{
+    width: 100%;
+
+}
+
+.fittyfitty2 section{
+    padding-top: 8%;
+    padding-bottom: 4%;
+    padding-right: 5%;
+    width: 50%;
+}
+
+
+.fittyfitty2 div{
+    padding-top: 4%;
+    padding-left: 5%;
+    padding-bottom: 4%;
+    width: 40%;
+    margin-top: 2%;
+}
+
+
+
+/*Generelle regler*/
+
+#knap, #knap2{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 100%
+}   
+#knap a, #knap2 a{
+    position: relative;
+    background-color: #06550c;
+    color:white;
+    text-decoration: none;
+    border-radius: 15rem;
+    padding: 1rem 3rem;
+    box-shadow: rgb(0, 0, 0, 0.5) 0px 3px 5px;
+    text-transform: uppercase;
+    font-family: 'InterRegular', sans-serif; 
+    transform: scale(1);
+    text-align: center;
+    font-size: small;
+}
+#knap a:hover, #knap2 a:hover{
+    background-color: #1b27a7;
+  
+}
+#knap:hover, #knap2:hover{
+    transition: transform 0.5s ease;
+    transform: scale(1.05);
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -98,6 +261,8 @@ p{
     background-color: #f8eee1;
     width: 100%;
     display: flex;
+    justify-content: center;
+    text-align: center;
 }
 
 .elipselys img{
@@ -106,10 +271,11 @@ p{
 }
 
 .elipselys div h2,.elipselys div p{
-    width: 50%;
+    width: 100%;
     flex-direction: column;
     justify-content: center;
-    text-align: center;  
+    text-align: center;
+
 }
 
 
@@ -139,3 +305,4 @@ p{
 .afsnitbrun img{
     width: 100%;
 }
+
