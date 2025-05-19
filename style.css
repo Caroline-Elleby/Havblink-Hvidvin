@@ -16,8 +16,28 @@ p{
 
 .forsidevideo{
     top: 10;
+    height: 30vh;
+}
+
+.forsidetekst img{
+    width: 13%;
+    margin-left: 43.5%;
+    margin-bottom: 10px;
+    border-radius: 10%;
+    
+}
+
+.overskrift a{
+    display: flex;
+    color: #000000;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.5rem;
+    line-height: 1.5;
 }
 .anbefalinger{
+    margin-top: 30%;
     display: flex;
     width: 100%;
 }
@@ -52,30 +72,73 @@ p{
     width: 50%;
     padding-left: 2rem;
 }
+.anmeldelser div h2{
+    font-size: 1.5rem;
+}
 
 .anmeldelser div{
     padding-top: 3rem;
+    padding-bottom: 3rem;
 }
+
 .pilhøjre img{
     padding-top: 11rem;
     padding-left: 10px;
+    width: 100%;
 }
 
 
-/*Afsnit*/
+                /*50/50 - Afsnit til alle undersider*/
+.fittyfittyhero{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+
+.fittyfittyhero img{
+    width: 50%;
+}
+
+.fittyfittyhero section{
+    display: flex;
+}
+
+
 .fittyfitty{
     background-image: url(images/elipselysbeige4.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     padding-bottom: 5rem;
-    padding-top: 10%;
+    padding-top: 12%;
 }
 
 .fittyfitty2{
     background-color: #e4d4bf;
     margin-top:10%;
 }
-.fittyfitty, .fittyfitty2{
+
+.fittyfittygrøn{
+    background-color: #e6f2e7;
+    margin-top:10%;
+    width: 100%;
+    display: flex;
+}
+
+.fittyfittybrun{
+    background-color: #c9b8a4;
+    margin-top:10%;
+    width: 100%;
+    display: flex;
+}
+
+.fittyfittyblå{
+    background-color: #e2f6fb;
+    margin-top:10%;
+    width: 100%;
+    display: flex;
+}
+.fittyfitty, .fittyfitty2, .fittyfittygrøn, .fittyfittybrun, .fittyfittyblå{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -83,23 +146,18 @@ p{
     
 }
 
-.fittyfitty h2, .fittyfitty2 h2{
+.fittyfitty h2, .fittyfitty2 h2, .fittyfittygrøn h2, .fittyfittybrun h2, .fittyfittyblå h2{
     color: #000000;
-    margin-top: 3%; 
+    margin-top: 5%; 
     font-size: 1.5rem;
 }
 
-.fittyfitty h3, .fittyfitty2 h3{
-    font-family: 'InterMedium', sans-serif;
-    text-align: left;
-    text-transform: uppercase;
-}
 
-.fittyfitty p, .fittyfitty2 p{
+.fittyfitty p, .fittyfitty2 p, .fittyfittygrøn p, .fittyfittybrun p, .fittyfittyblå p{
     font-family: 'Interregular', sans-serif;
     color: #000000; 
-    font-size: 17px;
-    line-height: 1.7;
+    font-size: 14px;
+    line-height: 1.5;
     margin-top: 5%;
 } 
 
@@ -124,10 +182,10 @@ p{
 }
 
 
-.fittyfitty div img, .fittyfitty2 div img{
+.fittyfitty div img, .fittyfitty2 div img, .fittyfittygrøn div img, .fittyfittybrun div img, .fittyfittyblå div img{ 
     width: 100%;
-
 }
+
 
 .fittyfitty2 section{
     padding-top: 8%;
@@ -146,6 +204,27 @@ p{
 }
 
 
+.fittyfittygrøn div, .fittyfittybrun div, .fittyfittyblå div{
+    width: 50%;
+}
+
+.fittyfittygrøn section, .fittyfittybrun section, .fittyfittyblå section{
+    padding-top: 5%;
+    padding-bottom: 4%;
+    padding-right: 5%;
+    width: 50%;
+    padding-left: 5%;
+}
+
+.fittyfittygrøn div img, .fittyfittybrun div img, .fittyfittyblå div img{ 
+    width: 100%;
+    margin-top: 30%;
+    margin-bottom: 30%;
+    padding-right: 10%;
+    padding-left: 10%;
+    
+}
+
 
 /*Generelle regler*/
 
@@ -153,7 +232,8 @@ p{
     display: flex;
     justify-content: center;
     text-align: center;
-    width: 100%
+    width: 100%;
+    margin-bottom: 10px; /*Knapperne i hero på forside har mellemrum/linjeafstand*/
 }   
 #knap a, #knap2 a{
     position: relative;
@@ -176,6 +256,12 @@ p{
 #knap:hover, #knap2:hover{
     transition: transform 0.5s ease;
     transform: scale(1.05);
+}
+
+.bue img{
+    width: 100%;
+    margin-top: 10%;
+    margin-bottom: 5%;
 }
 
 
@@ -229,9 +315,7 @@ p{
     width: 100%;
 }
 
-.bue img{
-    width: 100%;
-}
+
 
             /*call to action, knapper*/
 .læsmere{

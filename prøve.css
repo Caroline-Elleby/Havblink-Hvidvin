@@ -143,6 +143,20 @@ nav .dropdown-content li a {
 
 /*Forside*/
 
+.forsidevideo{
+    top: 10;
+    height: 30vh;
+}
+
+.forsidetekst img{
+    width: 13%;
+    margin-left: 43.5%;
+    margin-bottom: 10px;
+    border-radius: 10%;
+    
+}
+
+
 .fittyfitty, .fittyfitty2{
     display: flex;
     flex-direction: row;
@@ -230,8 +244,18 @@ nav .dropdown-content li a {
     justify-content: center;
     text-align: center;
     width: 100%
-}   
-#knap a, #knap2 a{
+}  
+
+#knap3{
+display: flex;
+width: 90%;
+margin-bottom: 10px;
+justify-content: right;
+padding-right: 5% ;
+
+}
+
+#knap a, #knap2 a, #knap3 a{
     position: relative;
     background-color: #06550c;
     color:white;
@@ -244,11 +268,11 @@ nav .dropdown-content li a {
     transform: scale(1);
     text-align: center;
 }
-#knap a:hover, #knap2 a:hover{
+#knap a:hover, #knap2 a:hover, #knap3 a:hover{
     background-color: #EB5351;
   
 }
-#knap:hover, #knap2:hover{
+#knap:hover, #knap2:hover, #knap3:hover{
     transition: transform 0.5s ease;
     transform: scale(1.05);
 }
@@ -266,19 +290,52 @@ nav .dropdown-content li a {
 
 
 footer{
-    background-color: #f8eee1;
     display: flex;
-
+    flex-direction: row;
+    background-color: #f8eee1;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color:#000000;
+    z-index: 8;
 }
 
 footer div{
-    width: 100%;
     display: flex;
-    padding: 1rem 5rem;
-    gap: 20rem;
+    gap: 100px;
+}
+footer section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left;
+    padding-left: 70px;
+    padding-right: 70px;
+    width: 100%;
+    line-height: 15px;
 }
 
-footer div a{
-    color: black;
 
+footer a{
+    color:#000000;
+}
+
+#socialmedia{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    gap: 2px;
+}
+
+footer img{
+    display: flex;
+    width: 40px;
+    margin-right: 10px;
+    flex-direction: row;
 }
