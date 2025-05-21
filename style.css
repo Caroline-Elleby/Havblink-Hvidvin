@@ -1,30 +1,69 @@
+
+/*Gælder for ALT*/
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
  
 }
+                              /*Fonts*/
+@font-face{
+    font-family: 'Higuen Elegant';
+    src: url(fonts/Higuen\ Serif.otf) format('truetype');
+}
 
+@font-face {
+    font-family: 'InterBold';
+    src: url(fonts/Inter_18pt-Bold.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'InterRegular';
+    src: url(fonts/Inter_18pt-Regular.ttf) format('truetype'); 
+}
 
+@font-face{
+    font-family: 'Cinzelbold';
+    src: url(fonts/CinzelDecorative-Bold.ttf) format('truetype');
+}
+@font-face{
+    font-family: 'cinzelregular';
+    src: url(fonts/CinzelDecorative-Regular.ttf)format('truetype');
+}
 
-
+                       /*Generelle regler for tekst*/
 p{
     font-family: 'Interregular', sans-serif;
+    font-size: 15px;
 }
+
+h2{
+    font-family:'InterBold';
+    font-size: 1.2rem;
+}
+h1{
+    font-family: 'cinzelbold';
+}
+
+body{
+    background-color: #fffaf2;
+}
+
+
+
 
                             /*Forside*/
 
 .forsidevideo{
     top: 10;
-    height: 30vh;
+    height: 30vh; /*Position relative*/  /*Position, absolute til knapper*/
 }
 
-.forsidetekst img{
-    width: 13%;
-    margin-left: 43.5%;
-    margin-bottom: 10px;
-    border-radius: 10%;
-    
+
+.overskrift{
+    margin-top: 5rem;
+    font-weight: bold;
+    width: 100%;              
 }
 
 .overskrift a{
@@ -35,20 +74,34 @@ p{
     text-decoration: none;
     font-size: 1.5rem;
     line-height: 1.5;
-}
-.anbefalinger{
-    margin-top: 30%;
-    display: flex;
+    font-family: 'cinzelbold';
     width: 100%;
 }
-.anbefalinger h2{
+
+.anbefalinger{
+    margin-top: 15%;
+    width: 100%;
+    display: flex;
+    padding: 2rem;
+}
+.anbefalinger section h2{
     font-size: 1.5rem;
+    flex-direction: column;
+    
+}
+.anbefalinger div{
+    display: flex;
 }
 
 .anbefalinger img{
     width: 100%;
     padding: 1rem;
 }
+.apil img{
+    width: 100%;
+    padding-top: 9rem;
+}
+
 
 .anmeldelser{
     display: flex;
@@ -59,70 +112,99 @@ p{
     margin-left: 2rem;    
     margin-right: 2rem;
     margin-top: 5rem;
-    
 }
 
 .anmeldelser img{
-    width: 50%;
+    width: 35%;
 }
+
 .anmeldelser div h2, .anmeldelser div p{
     margin-top: 2rem;
     margin-left: 2rem;
     margin-right: 2rem;
-    width: 50%;
+    width: 65%;
     padding-left: 2rem;
 }
+
 .anmeldelser div h2{
     font-size: 1.5rem;
 }
 
 .anmeldelser div{
-    padding-top: 3rem;
-    padding-bottom: 3rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 
 .pilhøjre img{
-    padding-top: 11rem;
-    padding-left: 10px;
-    width: 100%;
+    padding-top: 12rem;
+    padding-left: 20px;
+    padding-right: 10px;
+    width: 70%;
 }
 
 
-                /*50/50 - Afsnit til alle undersider*/
+                     /*50/50 - Afsnit til alle undersider*/
 .fittyfittyhero{
     width: 100%;
     display: flex;
     flex-direction: row;
+    margin-top: 2rem;
 }
 
 
 .fittyfittyhero img{
-    width: 50%;
+    width: 100%;
 }
 
 .fittyfittyhero section{
     display: flex;
+    width: 50%;
 }
 
 
 .fittyfitty{
-    background-image: url(images/elipselysbeige4.jpg);
+    background-image: url(images/lysbølge3.png);
     background-repeat: no-repeat;
     background-size: cover;
-    padding-bottom: 5rem;
-    padding-top: 12%;
+    padding-bottom: 7rem;
+    padding-top: 7%;
+    margin-top: 3rem;
+}
+.fittyfitty section{
+    padding-top: 6%;
+    padding-bottom: 4%;
+    padding-left: 5%;
+    width: 40%;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.fittyfitty11{
+    background-image: url(images/lysbølge2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 7rem;
+    padding-top: 9%;
+    margin-top: 3rem;
 }
 
 .fittyfitty2{
-    background-color: #e4d4bf;
-    margin-top:10%;
+    background-image: url(images/elipsebeigeforsøg4.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 5%;
+    padding-bottom: 8rem;
+    margin-top: 6rem;
+    
 }
 
 .fittyfittygrøn{
     background-color: #e6f2e7;
-    margin-top:10%;
+    margin-top: 10%;
     width: 100%;
     display: flex;
+    padding-bottom: 5%;
 }
 
 .fittyfittybrun{
@@ -130,6 +212,7 @@ p{
     margin-top:10%;
     width: 100%;
     display: flex;
+    padding-bottom: 5%;
 }
 
 .fittyfittyblå{
@@ -137,32 +220,50 @@ p{
     margin-top:10%;
     width: 100%;
     display: flex;
+    padding-bottom: 5%;
 }
-.fittyfitty, .fittyfitty2, .fittyfittygrøn, .fittyfittybrun, .fittyfittyblå{
+
+.fittyfittybrun2{
+    background-color: #c9b8a4;
+    margin-top: 10%;
+    width: 100%;
+    display: flex;
+
+    
+}
+
+.fittyfittyblå2{
+    background-color: #e2f6fb;
+
+}
+
+
+.fittyfitty, .fittyfitty11, .fittyfitty2, .fittyfittygrøn, .fittyfittybrun, .fittyfittyblå, .fittyfittybrun2{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    
     width: 100%;
     
 }
 
-.fittyfitty h2, .fittyfitty2 h2, .fittyfittygrøn h2, .fittyfittybrun h2, .fittyfittyblå h2{
+.fittyfitty h2, .fittyfitty11 h2, .fittyfitty2 h2, .fittyfittygrøn h2, .fittyfittybrun h2, .fittyfittyblå h2, .fittyfittybrun2 h2{
     color: #000000;
     margin-top: 5%; 
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 
 
-.fittyfitty p, .fittyfitty2 p, .fittyfittygrøn p, .fittyfittybrun p, .fittyfittyblå p{
+.fittyfitty p, .fittyfitty11 p, .fittyfitty2 p, .fittyfittygrøn p, .fittyfittybrun p, .fittyfittyblå p, .fittyfittybrun2 p{
     font-family: 'Interregular', sans-serif;
     color: #000000; 
-    font-size: 14px;
+    font-size: 15px;
     line-height: 1.5;
     margin-top: 5%;
 } 
 
 
-.fittyfitty section, .fittyfitty2 section{
+.fittyfitty11 section, .fittyfitty2 section{
     padding-top: 4%;
     padding-bottom: 4%;
     padding-left: 5%;
@@ -172,7 +273,7 @@ p{
 }
 
 
-.fittyfitty div{
+.fittyfitty div, .fittyfitty11 div{
     padding-top: 4%;
     padding-right: 5%;
     padding-bottom: 4%;
@@ -182,8 +283,10 @@ p{
 }
 
 
-.fittyfitty div img, .fittyfitty2 div img, .fittyfittygrøn div img, .fittyfittybrun div img, .fittyfittyblå div img{ 
+.fittyfitty div img, .fittyfitty11 div img, .fittyfitty2 div img, .fittyfittygrøn div img, .fittyfittybrun div img, .fittyfittyblå div img, .fittyfittybrun2 div img{ 
     width: 100%;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -196,7 +299,7 @@ p{
 
 
 .fittyfitty2 div{
-    padding-top: 4%;
+    padding-top: 5%;
     padding-left: 5%;
     padding-bottom: 4%;
     width: 40%;
@@ -204,13 +307,12 @@ p{
 }
 
 
-.fittyfittygrøn div, .fittyfittybrun div, .fittyfittyblå div{
+.fittyfittygrøn div, .fittyfittybrun div, .fittyfittyblå div, .fittyfittybrun2 div{
     width: 50%;
 }
 
-.fittyfittygrøn section, .fittyfittybrun section, .fittyfittyblå section{
-    padding-top: 5%;
-    padding-bottom: 4%;
+.fittyfittygrøn section, .fittyfittybrun section, .fittyfittyblå section, .fittyfittybrun2 section{
+    padding-top: 3%;
     padding-right: 5%;
     width: 50%;
     padding-left: 5%;
@@ -219,41 +321,72 @@ p{
 .fittyfittygrøn div img, .fittyfittybrun div img, .fittyfittyblå div img{ 
     width: 100%;
     margin-top: 30%;
-    margin-bottom: 30%;
+    margin-bottom: 20%;
     padding-right: 10%;
     padding-left: 10%;
     
 }
 
 
-/*Generelle regler*/
+                            /*Generelle gentagenede regler*/
+.tiltoppen{
+    position: fixed;
+    bottom: 2%;
+    right: 2%;
+    z-index: 9;
+    background-color: #835332;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.tiltoppen a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 2%;
+    width: 100%;
+    text-align: center;
+}
 
 #knap, #knap2{
     display: flex;
     justify-content: center;
     text-align: center;
-    width: 100%;
-    margin-bottom: 10px; /*Knapperne i hero på forside har mellemrum/linjeafstand*/
-}   
-#knap a, #knap2 a{
+    width: 100%
+}  
+
+#knap3{
+    display: flex;
+    width: 90%;
+    margin-bottom: 10px;
+    justify-content: right;
+    padding-right: 5% ;
+
+
+}
+
+#knap a, #knap2 a, #knap3 a{
     position: relative;
     background-color: #06550c;
     color:white;
     text-decoration: none;
     border-radius: 15rem;
     padding: 1rem 3rem;
-    box-shadow: rgb(0, 0, 0, 0.5) 0px 3px 5px;
+    box-shadow: rgb(0, 0, 0, 0.5) 0px 5px 10px;
     text-transform: uppercase;
     font-family: 'InterRegular', sans-serif; 
     transform: scale(1);
     text-align: center;
-    font-size: small;
 }
-#knap a:hover, #knap2 a:hover{
-    background-color: #1b27a7;
+#knap a:hover, #knap2 a:hover, #knap3 a:hover{
+    background-color: #0603aa;
   
 }
-#knap:hover, #knap2:hover{
+#knap:hover, #knap2:hover, #knap3:hover{
     transition: transform 0.5s ease;
     transform: scale(1.05);
 }
@@ -262,6 +395,16 @@ p{
     width: 100%;
     margin-top: 10%;
     margin-bottom: 5%;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 10%;
+    width: 100%;
+
 }
 
 
@@ -304,89 +447,4 @@ p{
                             /*Din prfil*/
 
 
-                            /*Afsnit(s)*/
-
-    /*Generelt*/
-.afsnit{
-    background-color: #e6f2e7;
-}
-
-.afsnit img{
-    width: 100%;
-}
-
-
-
-            /*call to action, knapper*/
-.læsmere{
-    background-color: #06550c;
-    display: flex;
-    justify-content: center;
-}
-
-.læsmere a{
-    color: white;
-    text-decoration: none;
-}
-
-
-        /*Blå*/
-.afsnitblå{
-    background-color: #e2f6fb;
-}
-
-.afsnitblå img{
-    width: 100%;
-}
-
-        /*Elipse i lys Beige*/
-
-.elipselys{
-    background-color: #f8eee1;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-}
-
-.elipselys img{
-    width: 50%;
-    margin-left: 20%;
-}
-
-.elipselys div h2,.elipselys div p{
-    width: 100%;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-
-}
-
-
-
-        /*Elipses i mørk beige*/
-.elipsebeige img{
-    width: 100%;
-}
-
-.elipsebeige{
-    background-color: #e4d4bf;
-}
-
-        /*Grøn*/
-.afsnitgrøn{
-    background-color: #e6f2e7;
-}
-.afsnitgrøn img{
-    width: 100%;
-}
-
-        /*Brun*/
-.afsnitbrun{
-    background-color: #c9b8a4;
-}
-
-.afsnitbrun img{
-    width: 100%;
-}
-
+                        

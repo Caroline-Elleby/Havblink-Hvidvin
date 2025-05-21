@@ -14,6 +14,8 @@ h2{
 #fragt{
     width: 100%;
     background-color: #06550c;
+    /*background-color: #4373cd;*/
+
     height: 40px;
     font-family: 'InterRegular', sans-serif;
     font-size: 12px;
@@ -27,7 +29,7 @@ header{
     display: flex; 
     justify-content: space-between; 
     align-items: center;
-    background-color: #FFFAF2; /*header baggrundsfarven*/
+    background-color: #F8eee1; /*header baggrundsfarven*/
     position: sticky; /*headeren er sticky*/
     top: 0; /*ikke noget whitespace mellem header og toppen af siden*/
     justify-content: center;
@@ -70,7 +72,7 @@ header a{
 }
 
 header a:hover{
-    text-shadow: 2px 4px 4px #faf7f7; /* Shadow effect on hover */
+    text-shadow: 2px 4px 4px #746441; /* Shadow effect on hover */
     transition: color 0.3s ease; /* Smooth transition for hover effect */
 }
 
@@ -92,7 +94,7 @@ nav a {
     display: block;
     text-align: center;
     justify-content: center;
-    font-size: 10   px;
+
 }
 
 /* Style for the dropdown link */
@@ -170,7 +172,7 @@ nav .dropdown-content li a {
 
 
 
-
+/**/
 
 
 footer{
@@ -178,27 +180,22 @@ footer{
     flex-direction: row;
     background-color: #f8eee1;
     width: 100%;
-    position: relative;
-    padding-top: 50px;
-    padding-bottom: 50px; 
-    padding-left: 20px;
-    padding-right: 20px;
-    color:#000000;
-    z-index: 8;
+    padding: 30px 10px 30px 100px;
+    color:#835332;
+    justify-content: center;
+    margin-top: 5rem;
 }
 
 footer div{
     display: flex;
-    gap: 10px;
+    gap: 30px;
 }
 footer section{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     text-align: left;
-    padding-left: 70px;
-    padding-right: 70px;
-    width: 100%;
+    width: 50%;
     line-height: 15px;
     
 }
@@ -206,33 +203,35 @@ footer section{
 
 footer a, footer p{
     color:#000000;
-    font-size: 1rem;
+    font-size: 15px;
     font-family: 'InterRegular', sans-serif;
 
 }
 footer h2{
-    font-size: 1.5rem;
+    font-size: 1.1rem;
 }
 
 #socialmedia{
     display: flex;
     flex-direction: row;
     justify-content: left;
-    gap: 2px;
+    gap: 10px;
+}
+#socialmedia img{
+    width: 70%;
 }
 
 #økomærker{
     width: 100%;
     padding-top: 15%;
+    padding-left: 20%;
 }
 
 #økomærker img{
     display: flex;
-    width: 33%;
-    margin-right: 10px;
+    width: 25%;
+   
     flex-direction: row;
     aspect-ratio: 3/2;
-    object-fit: contain;
-    
-    
+    object-fit: contain;    
 }
