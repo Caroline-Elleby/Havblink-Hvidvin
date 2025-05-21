@@ -41,12 +41,28 @@ h2{
     font-family:'InterBold';
     font-size: 1.2rem;
 }
+
 h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 1%;
+    width: 100%;
     font-family: 'cinzelbold';
 }
 
+        /*gentagende billeder*/
+.bue img{
+    width: 100%;
+    margin-top: 10%;
+    margin-bottom: 1%;
+}
+
+
+
 body{
-    background-color: #fffaf2;
+    background-color: #fffaf2; /*Baggrundfarve på alle sider*/
 }
 
 
@@ -78,8 +94,32 @@ body{
     width: 100%;
 }
 
-.anbefalinger{
+.anbefalinger1{ /*Forside .anbefalinger*/
     margin-top: 15%;
+    width: 100%;
+    display: flex;
+    padding: 2rem;
+}
+.anbefalinger1 section h2{
+    font-size: 1.5rem;
+    flex-direction: column;
+    
+}
+.anbefalinger1 div{
+    display: flex;
+}
+
+.anbefalinger1 img{
+    width: 100%;
+    padding: 1rem;
+}
+.apil1 img{
+    width: 100%;
+    padding-top: 9rem;
+}
+
+.anbefalinger{ /*.anbefalinger på Gode Dryp og Druer*/
+    margin-top: 5%;
     width: 100%;
     display: flex;
     padding: 2rem;
@@ -144,7 +184,7 @@ body{
 
 
                      /*50/50 - Afsnit til alle undersider*/
-.fittyfittyhero{
+.fittyfittyhero{  /*Herobilleder*/
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -161,8 +201,8 @@ body{
     width: 50%;
 }
 
-
-.fittyfitty{
+        /*ALLE fittyfitty afsnit*/   /*Først de enkeltes regler, derefter fællesregler */
+.ff{
     background-image: url(images/lysbølge3.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -170,18 +210,48 @@ body{
     padding-top: 7%;
     margin-top: 3rem;
 }
-.fittyfitty section{
-    padding-top: 6%;
+
+.ff section{
+    padding-top: 7%;
     padding-bottom: 4%;
     padding-left: 5%;
     width: 40%;
     justify-content: center;
     text-align: center;
 }
+.ff3{ /*Quiz afsnit*/
+    display: flex;
+    width: 90%;
+    background-image: url(images/quizbølge.png);
+    background-repeat: no-repeat;
+    background-size: contain; /*Hele elipsen kan ses*/
+    padding-bottom: 7rem;
+    padding-top: 5%;
+    margin-top: 3rem;
+    margin-left: 6rem;
+    margin-bottom: 10%;
+}
 
+.ff3 section{
+    width: 80%;
+    padding-top: 3%;
+    padding-left: 15%;
+    justify-content: center;
+    text-align: center;
+}
+.ff3 div{
+    justify-content: center;
+    align-items: center;
+    margin-right: 12rem;
+    padding-top: 8%;
+}
 
-.fittyfitty11{
-    background-image: url(images/lysbølge2.png);
+.ff3 section h2{
+    font-family: 'cinzelBold';
+}
+
+.ff11{
+    background-image: url(images/lysbølge2.png); /*lysbølge2 er lidt større end lysbølge3*/
     background-repeat: no-repeat;
     background-size: cover;
     padding-bottom: 7rem;
@@ -189,17 +259,16 @@ body{
     margin-top: 3rem;
 }
 
-.fittyfitty2{
-    background-image: url(images/elipsebeigeforsøg4.png);
+.ff2{
+    background-image: url(images/elipsebeigeforsøg4.png); /*Mørk beige bølge*/
     background-repeat: no-repeat;
     background-size: cover;
     padding-top: 5%;
     padding-bottom: 8rem;
     margin-top: 6rem;
-    
 }
 
-.fittyfittygrøn{
+.ffgrøn{
     background-color: #e6f2e7;
     margin-top: 10%;
     width: 100%;
@@ -207,7 +276,7 @@ body{
     padding-bottom: 5%;
 }
 
-.fittyfittybrun{
+.ffbrun{
     background-color: #c9b8a4;
     margin-top:10%;
     width: 100%;
@@ -215,7 +284,7 @@ body{
     padding-bottom: 5%;
 }
 
-.fittyfittyblå{
+.ffblå, .ffblå2{ /*ffblå2 = Blåt afsnit med knap*/
     background-color: #e2f6fb;
     margin-top:10%;
     width: 100%;
@@ -223,38 +292,111 @@ body{
     padding-bottom: 5%;
 }
 
-.fittyfittybrun2{
+.ffblå2 div img{
+    width: 100%;
+    margin-top: 15%;
+    margin-bottom: 10%;
+    padding-right: 10%;
+    padding-left: 10%;
+}
+
+.ffbrun2{
     background-color: #c9b8a4;
     margin-top: 10%;
     width: 100%;
     display: flex;
-
-    
 }
 
-.fittyfittyblå2{
+.ffblå3{ /*2 kolloner blåt afsnit*/
     background-color: #e2f6fb;
+    margin-top:10%;
+    width: 100%;
+    display: flex;
+    padding-bottom: 5%;
+}
 
+.ffgrøn2{ /*2 kolonner grønt afsnit*/
+    background-color: #e6f2e7;
+    margin-top:10%;
+    width: 100%;
+    display: flex;
+    padding-bottom: 5%;
+}
+
+.ffsie{
+    background-image: url(images/elipsebeigeforsøg4.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 7rem;
+    padding-top: 7%;
+    margin-top: 3rem;
+}
+
+    /*Kontakt afsnit*/
+.ffkontakt div img{
+    width: 40%;
+    justify-content: center;
+    margin-left: 14.5rem;
+    margin-top: 5rem;
+    border-radius: 100%;
+}
+
+.ffkontakt div h2{
+    justify-content: center;
+    text-align: center;
+}
+
+.ffkontakt section{
+    width: 100%;
+    padding-top: 6rem;
+    padding-right: 5rem;
+}
+
+            /**/
+
+            /*Fælles regler for 50/50*/
+.ffværdier, .ffvision, .ffjohan{
+    background-image: url(images/lysbølge2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 7rem;
+    padding-top: 7%;
+    margin-top: 3rem;
+}
+
+.ffværdier section, .ffmission section, .ffvision section, .ffjohan section, .ffsie section{ /*større elipseafsnit med venstrestillet tekst*/
+    padding-top: 4%;
+    padding-bottom: 4%;
+    padding-left: 5%;
+    width: 40%;
+    justify-content: flex-start; /*content starter fra venstre*/
+}
+
+.ffmission, .ffkontakt{
+    background-image: url(images/elipsebeigeforsøg4.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 5%;
+    padding-bottom: 9rem;
+    margin-top: 6rem;
 }
 
 
-.fittyfitty, .fittyfitty11, .fittyfitty2, .fittyfittygrøn, .fittyfittybrun, .fittyfittyblå, .fittyfittybrun2{
+.ff, .ff11, .ff2, .ffgrøn, .ffgrøn2, .ffbrun, .ffblå, .ffblå2, .ffblå3, .ffbrun2, .ffværdier, .ffmission, .ffvision, .ffkontakt, .ffjohan, .ffsie{ /*ALLE 50/50*/
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    
     width: 100%;
-    
 }
 
-.fittyfitty h2, .fittyfitty11 h2, .fittyfitty2 h2, .fittyfittygrøn h2, .fittyfittybrun h2, .fittyfittyblå h2, .fittyfittybrun2 h2{
+.ff h2, .ff11 h2, .ff2 h2, .ff3 h2, .ffgrøn h2, .ffgrøn2 h2, .ffbrun h2, .ffblå h2, .ffblå2 h2, .ffblå3 h2, .ffbrun2 h2, .ffværdier h2, .ffmission h2, .ffvision h2, .ffjohan h2, .ffsie h2{ /*ALLE 50/50*/
     color: #000000;
     margin-top: 5%; 
     font-size: 1.2rem;
 }
 
 
-.fittyfitty p, .fittyfitty11 p, .fittyfitty2 p, .fittyfittygrøn p, .fittyfittybrun p, .fittyfittyblå p, .fittyfittybrun2 p{
+.ff p, .ff11 p, .ff2 p, .ff3 p, .ffgrøn p, .ffgrøn2 p, .ffbrun p, .ffblå p, .ffblå2 p, .ffblå3 p, .ffbrun2 p, .ffværdier p,.ffmission p, .ffvision p, .ffkontakt p, .ffjohan p, .ffsie p{ /*Alle 50/50*/
     font-family: 'Interregular', sans-serif;
     color: #000000; 
     font-size: 15px;
@@ -263,7 +405,7 @@ body{
 } 
 
 
-.fittyfitty11 section, .fittyfitty2 section{
+.ff11 section, .ff2 section{ 
     padding-top: 4%;
     padding-bottom: 4%;
     padding-left: 5%;
@@ -273,24 +415,22 @@ body{
 }
 
 
-.fittyfitty div, .fittyfitty11 div{
+.ff div, .ff11 div, .ffværdier div, .ffvision div, .ffjohan div, .ffsie div{
     padding-top: 4%;
     padding-right: 5%;
     padding-bottom: 4%;
     width: 40%;
     margin-top: 2%;
-    
 }
 
 
-.fittyfitty div img, .fittyfitty11 div img, .fittyfitty2 div img, .fittyfittygrøn div img, .fittyfittybrun div img, .fittyfittyblå div img, .fittyfittybrun2 div img{ 
+.ff div img, .ff11 div img, .ff2 div img, .ffgrøn div img, .ffgrøn2 div img, .ffbrun div img, .ffblå div img, .ffblå2 div img,.ffblå3 div img, .ffbrun2 div img, .ffværdier div img, .ffmission div img, .ffvision div img, .ffjohan div img, .ffsie div img{ /*Næsten alle 50/50*/
     width: 100%;
     justify-content: center;
     align-items: center;
 }
 
-
-.fittyfitty2 section{
+.ff2 section, .ffmission section{
     padding-top: 8%;
     padding-bottom: 4%;
     padding-right: 5%;
@@ -298,7 +438,7 @@ body{
 }
 
 
-.fittyfitty2 div{
+.ff2 div, .ffmission div{
     padding-top: 5%;
     padding-left: 5%;
     padding-bottom: 4%;
@@ -307,31 +447,39 @@ body{
 }
 
 
-.fittyfittygrøn div, .fittyfittybrun div, .fittyfittyblå div, .fittyfittybrun2 div{
+.ffgrøn div, .ffbrun div, .ffblå div, .ffblå2 div, .ffbrun2 div{
     width: 50%;
 }
 
-.fittyfittygrøn section, .fittyfittybrun section, .fittyfittyblå section, .fittyfittybrun2 section{
+.ffgrøn section, .ffgrøn2 section, .ffbrun section, .ffblå section, .ffblå2 section,.ffblå3 section, .ffbrun2 section{
     padding-top: 3%;
     padding-right: 5%;
     width: 50%;
     padding-left: 5%;
 }
 
-.fittyfittygrøn div img, .fittyfittybrun div img, .fittyfittyblå div img{ 
+.ffgrøn div img, .ffbrun div img, .ffblå div img{ 
     width: 100%;
     margin-top: 30%;
-    margin-bottom: 20%;
+    margin-bottom: 10%;
     padding-right: 10%;
     padding-left: 10%;
-    
+}
+
+.ffblå3 div img, .ffgrøn2 div img{
+    width: 100%;
+    margin-top: 15%;
+    margin-bottom: 10%;
+    padding-right: 10%;
+    padding-left: 10%;
 }
 
 
                             /*Generelle gentagenede regler*/
+     /*Knapper*/
 .tiltoppen{
     position: fixed;
-    bottom: 2%;
+    bottom: 3%;
     right: 2%;
     z-index: 9;
     background-color: #835332;
@@ -351,7 +499,11 @@ body{
     width: 100%;
     text-align: center;
 }
+.tiltoppen:hover{
+    background-color: #c9b8a4;
+}
 
+    /*Call to action - knapper*/
 #knap, #knap2{
     display: flex;
     justify-content: center;
@@ -364,9 +516,7 @@ body{
     width: 90%;
     margin-bottom: 10px;
     justify-content: right;
-    padding-right: 5% ;
-
-
+    padding-right: 5%;
 }
 
 #knap a, #knap2 a, #knap3 a{
@@ -379,72 +529,21 @@ body{
     box-shadow: rgb(0, 0, 0, 0.5) 0px 5px 10px;
     text-transform: uppercase;
     font-family: 'InterRegular', sans-serif; 
+    font-size: 14px;
     transform: scale(1);
     text-align: center;
 }
+
 #knap a:hover, #knap2 a:hover, #knap3 a:hover{
     background-color: #0603aa;
-  
 }
+
 #knap:hover, #knap2:hover, #knap3:hover{
     transition: transform 0.5s ease;
     transform: scale(1.05);
 }
 
-.bue img{
-    width: 100%;
-    margin-top: 10%;
-    margin-bottom: 5%;
-}
 
-h1{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin-top: 10%;
-    width: 100%;
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                            /*Vores Produktion*/
-.vphero img{
-    width: 100%;
-}
-
-
-
-                            /*Gode Dryp*/
-.gdhero img{
-    width: 100%;
-}
-
-                            /*Vingården Havblink*/
-.vhhero img{
-    width: 100%;
-}
-
-                            /*Din prfil*/
-
+                                        /*Mobil*/
 
                         
