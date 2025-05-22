@@ -51,6 +51,10 @@ h1{
     width: 100%;
     font-family: 'cinzelbold';
 }
+h3{
+    font-family: 'InterBold';
+    font-size: 15px;
+}
 
         /*gentagende billeder*/
 .bue img{
@@ -71,76 +75,93 @@ body{
                             /*Forside*/
 
 .forsidevideo{
-    top: 10;
+    top: 10px;
     height: 30vh; /*Position relative*/  /*Position, absolute til knapper*/
 }
 
 
-.overskrift{
+.overskrift {
     margin-top: 5rem;
     font-weight: bold;
-    width: 100%;              
+    width: 100%;
 }
 
-.overskrift a{
+.overskrift section {
     display: flex;
-    color: #000000;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 2rem; /* eller brug fx: gap: 5%; hvis du vil have procentbaseret afstand */
+}
+
+.overskrift section div {
+    flex: 1;
     text-align: center;
+}
+
+.overskrift a {
+    color: #000000;
     text-decoration: none;
     font-size: 1.5rem;
     line-height: 1.5;
     font-family: 'cinzelbold';
-    width: 100%;
+    position: relative;
+    transition: 0.3s ease;
 }
 
-.anbefalinger1{ /*Forside .anbefalinger*/
+.overskrift a:hover{
+    color: #0603aa;
+}
+
+
+.overskrift a::after {/* Stregen under links */
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+}
+
+
+.overskrift a:hover::after {/* Hovereffekt: glider ind */
+    transform: scaleX(1);
+}
+
+
+#anbefalinger1{ /*Forside .anbefalinger*/
     margin-top: 15%;
     width: 100%;
     display: flex;
     padding: 2rem;
 }
-.anbefalinger1 section h2{
+#anbefalinger1 section h2, #anbefalinger section h2{
     font-size: 1.5rem;
     flex-direction: column;
-    
 }
-.anbefalinger1 div{
+
+#anbefalinger1 div, #anbefalinger div{
     display: flex;
 }
 
-.anbefalinger1 img{
+#anbefalinger1 img, #anbefalinger img{
     width: 100%;
     padding: 1rem;
 }
-.apil1 img{
-    width: 100%;
-    padding-top: 9rem;
+.apil1, .apil{
+    width: 10%;
+    padding-top: 7.2rem;
 }
 
-.anbefalinger{ /*.anbefalinger på Gode Dryp og Druer*/
+#anbefalinger{ /*.anbefalinger på Gode Dryp og Druer*/
     margin-top: 5%;
     width: 100%;
     display: flex;
     padding: 2rem;
-}
-.anbefalinger section h2{
-    font-size: 1.5rem;
-    flex-direction: column;
-    
-}
-.anbefalinger div{
-    display: flex;
-}
-
-.anbefalinger img{
-    width: 100%;
-    padding: 1rem;
-}
-.apil img{
-    width: 100%;
-    padding-top: 9rem;
-}
+} 
 
 
 .anmeldelser{
@@ -182,6 +203,48 @@ body{
     width: 70%;
 }
 
+/*Typer indeling på Gode Dryp*/
+#typer{
+    width: 90%;
+    display: flex;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    margin-left: 3rem;
+}
+
+#typer section h2{
+    font-size: 1.5rem;
+    flex-direction: column;
+    text-align: center;
+}
+#typer p{
+    text-align: center;
+}
+
+#typer div{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    
+}
+
+.typerafsnit{
+    flex-direction: column;
+}
+
+#typer img{
+    width: 70%;
+    margin-left: 3rem;
+}
+
+#typer .knap{ /*Se vin - knap*/     
+    padding-top: 5%;
+    justify-content: center;
+    text-align: center;
+}
+
 
                      /*50/50 - Afsnit til alle undersider*/
 .fittyfittyhero{  /*Herobilleder*/
@@ -218,6 +281,9 @@ body{
     width: 40%;
     justify-content: center;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* ← Centrerer indhold horisontalt */
 }
 .ff3{ /*Quiz afsnit*/
     display: flex;
@@ -412,6 +478,9 @@ body{
     width: 40%;
     justify-content: center;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* ← Centrerer indhold horisontalt */
 }
 
 
@@ -504,46 +573,52 @@ body{
 }
 
     /*Call to action - knapper*/
-#knap, #knap2{
+.knap, .knap2{
     display: flex;
     justify-content: center;
     text-align: center;
     width: 100%
 }  
 
-#knap3{
+.knap2{
+    margin-left: 10rem;
+}
+
+.knap3{
     display: flex;
     width: 90%;
     margin-bottom: 10px;
     justify-content: right;
-    padding-right: 5%;
+    padding-right: 2%;
 }
 
-#knap a, #knap2 a, #knap3 a{
+.knap a, .knap2 a, .knap3 a{
     position: relative;
     background-color: #06550c;
     color:white;
     text-decoration: none;
     border-radius: 15rem;
-    padding: 1rem 3rem;
+    padding: 1rem 4rem;
     box-shadow: rgb(0, 0, 0, 0.5) 0px 5px 10px;
     text-transform: uppercase;
     font-family: 'InterRegular', sans-serif; 
     font-size: 14px;
     transform: scale(1);
     text-align: center;
+    white-space: nowrap;
 }
 
-#knap a:hover, #knap2 a:hover, #knap3 a:hover{
+.knap a:hover, .knap2 a:hover, .knap3 a:hover{
     background-color: #0603aa;
 }
 
-#knap:hover, #knap2:hover, #knap3:hover{
+.knap:hover, .knap2:hover, .knap3:hover{
     transition: transform 0.5s ease;
     transform: scale(1.05);
 }
 
 
                                         /*Mobil*/
-
-                        
+@media screen {
+    
+}

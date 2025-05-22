@@ -1,0 +1,114 @@
+#info{
+    display: block; /*kolonne*/
+    width: 90%; /*ikke 100% pga hovereffekt*/
+    position: absolute;
+    z-index: 8;
+    line-height: 25px;
+}
+
+#info section{
+    margin-top: 2rem;
+    margin-left: 5%;
+    
+}
+
+#info textarea{
+    display: block;
+    font-family: 'Interregular';
+    font-size: 15px;
+    margin-left: 1%;
+    padding-left: 0.5%;
+    height: 25px;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid #835332;
+}
+
+#info a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Interregular';
+    padding-left: 1.5%;
+    font-size: 15px;
+    display: block;
+    
+}
+#info section a:hover, .indstillinger h2:hover{
+    transition: transform 0.3s ease;
+    transform: scale(1.03);
+}
+
+#info h2{
+    font-size: 1.5rem;
+}
+.indstillinger h2{
+    margin-left: -1.5%; /*Så den er på linje med h2 og ikke a links, trods det er et link*/
+}
+
+#info img{
+    margin-left: 2%;
+    width: 1%;
+}
+
+#persona{
+    display: flex;
+    width: 100%;
+    position: absolute;
+    margin-top: 20px;
+}
+#persona img{
+    width: 30%;
+    margin-left: 60%;
+    margin-top: 5%;
+}
+
+#anbefalinger1{
+    margin-top: 45%;
+    position: relative;
+}
+
+
+
+/*Hjerteikoner over billeder*/
+.hjerte1, .hjerte2, .hjerte3, .hjerte4{
+    position: absolute;
+    z-index: 1;
+    width: 6%;
+    margin-top: 19.6%;
+}
+.hjerte1{
+    margin-left: 20%;
+}
+
+.hjerte2{
+    margin-left: 41.6%;
+}
+
+.hjerte3{
+    margin-left: 62.7%;
+}
+.hjerte4{
+    margin-left: 83.8%;
+}
+
+
+
+@media screen and (max-width:600px) {
+    #anbefalinger1{
+        margin-top: 32rem;
+    }
+
+    #info img{
+        width: 3%;
+    }
+   .apil{
+    width: 70%;
+    padding-top: 1rem;
+   }
+   #anbefalinger1 img{
+    width: 100%;
+   }
+
+
+    
+}
