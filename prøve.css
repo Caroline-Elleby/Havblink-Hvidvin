@@ -133,36 +133,21 @@ body{
 
 
 
-#anbefalinger1{ /*Forside .anbefalinger*/
-    margin-top: 15%;
-    width: 100%;
-    display: flex;
-    padding: 2rem;
-}
-#anbefalinger1 section h2, #anbefalinger section h2{
-    font-size: 1.5rem;
-    flex-direction: column;
-}
 
-#anbefalinger1 div, #anbefalinger div{
-    display: flex;
-}
 
-#anbefalinger1 img, #anbefalinger img{
-    width: 100%;
-    padding: 1rem;
-}
-.apil1, .apil{
-    width: 10%;
-    padding-top: 7.2rem;
-}
+
+
+
+
+
+
 
 #anbefalinger{ /*.anbefalinger på Gode Dryp og Druer*/
     margin-top: 5%;
     width: 100%;
     display: flex;
     padding: 2rem;
-} 
+}
 
 
 .anmeldelser{
@@ -594,7 +579,6 @@ body{
 }
 
 .knap a, .knap2 a, .knap3 a{
-    position: relative;
     background-color: #06550c;
     color:white;
     text-decoration: none;

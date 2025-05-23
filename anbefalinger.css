@@ -1,0 +1,91 @@
+
+/*Denne CSS side er til for at kunne style #anbefalinger1. Der er noget i det fællesstylesheet der blokerede det jeg ville. Jeg lede ihærdigt for at finde fejlen, men kunne ikke finde den... Desværre*/
+/*Dette var den næstbedste løsning jeg kunne komme på*/
+
+#anbefalinger1{ /*#anbefalinger*/
+    margin-top: 15%;
+    width: 100%;
+    display: flex;
+    padding: 2rem;
+}
+
+#anbefalinger1 section h2, #anbefalinger section h2{
+    font-size: 1.5rem;
+}
+
+#anbefalinger1 div, #anbefalinger div{
+    display: flex;
+}
+
+#anbefalinger1 img, #anbefalinger img{
+    width: 100%;
+    padding: 1rem;
+}
+
+.apil1, .apil{
+    width: 10%;
+    padding-top: 7.2rem;
+}
+
+#container{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 2rem;
+}
+
+.vinkort{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.vinkort img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.vininfo{
+    width: 88%;
+    height: 89%;
+    padding: 2rem;
+    margin-left: 1rem;  
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.7);
+    margin-top: 1rem;
+    text-align: center;
+    border: 2px solid #06550c;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.vininfo h3{
+    padding-bottom: 2rem;
+    align-items: flex-start;
+    font-size: 1rem;
+    color:#06550c
+}
+
+.vininfo p{
+    width: 100%;
+}
+
+.vininfo a{
+    padding-top: 20%;
+    width: 100%;
+    text-align: center;
+
+    text-decoration: underline;
+    color: #06550c;
+    font-family: 'InterBold';
+}
+
+
+.vininfo:hover{
+    transition: transform 0.3s ease;
+    transform: scale(1.03);
+    opacity: 1;
+}

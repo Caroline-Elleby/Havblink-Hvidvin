@@ -70,26 +70,64 @@
 
 
 /*Hjerteikoner over billeder*/
-.hjerte1, .hjerte2, .hjerte3, .hjerte4{
+.hjerte{
     position: absolute;
-    z-index: 1;
+    z-index: 0;
     width: 6%;
     margin-top: 19.6%;
 }
-.hjerte1{
-    margin-left: 20%;
+.hjerte{
+    margin-left: 15%;
 }
 
-.hjerte2{
-    margin-left: 41.6%;
+
+
+
+
+#anbefalinger1{ /*Forside .anbefalinger*/
+    margin-top: 45%;
+    width: 100%;
+    display: flex;
+    padding: 2rem;
+    z-index: 8;
+    margin-bottom: 10%;
 }
 
-.hjerte3{
-    margin-left: 62.7%;
+#anbefalinger1 section h2{
+    font-size: 1.5rem;
 }
-.hjerte4{
-    margin-left: 83.8%;
+
+#anbefalinger1 div{
+    display: flex;
 }
+
+#anbefalinger1 img{
+    width: 100%;
+    padding: 1rem;
+}
+
+.apil1, .apil{
+    width: 10%;
+    padding-top: 7.2rem;
+}
+
+.favorikort{
+    flex-direction: column;
+    text-align: center;
+}
+
+.favorikort:hover{
+    transition: transform 0.3s ease;
+    transform: scale(1.03);
+}
+
+
+
+
+
+
+
+
 
 
 
