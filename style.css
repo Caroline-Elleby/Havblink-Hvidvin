@@ -673,7 +673,7 @@ body{
 
 
     /*ff afsnits*/
-    .ff, .ff11, .ff2, .ffgrøn, .ffbrun, .ffblå, .ffbrun2, .ffværdier, .ffmission, .ffvision, .ffblå2, .ffkontakt{
+    .ff, .ff11, .ff2, .ffgrøn, .ffbrun, .ffblå, .ffbrun2, .ffværdier, .ffmission, .ffvision, .ffblå2, .ffkontakt, .ffjohan, .ffsie{
         display: block;
         justify-content: center;
         align-items: center;
@@ -686,14 +686,14 @@ body{
         padding-bottom: 50rem;
     }
 
-    .ffvision{
+    .ffvision, .ffjohan{
         background-image: url(images/Frame\ 63.png);
         width: 100%;
         height: 55rem;
         padding-bottom: 50rem;
     }
 
-    .ff section, .ff11 section, .ffgrøn section, .ffblå section, .ffbrun2 section, .ffværdier section, .ffvision section, .ffblå2 section{
+    .ff section, .ff11 section, .ffgrøn section, .ffblå section, .ffbrun2 section, .ffværdier section, .ffvision section, .ffblå2 section, .ffjohan section, .ffsie section{
         margin-top: 4rem;
         width: 95%;
     }
@@ -703,7 +703,7 @@ body{
         margin-bottom: 4rem;
     }
 
-    .ff2, .ffmission{
+    .ff2, .ffmission, .ffsie{
         background-image: url(images/Frame\ 63mørk.png);
         width: 100%;
     }
@@ -719,7 +719,7 @@ body{
         margin-left: 3.5rem;
         margin-top: 4rem;
     }
-    .ff div img, .ff11 div img, .ffværdier div img, .ffvision div img{
+    .ff div img, .ff11 div img, .ffværdier div img, .ffvision div img, .ffjohan div img, .ffsie div img{
         width: 200%;
         justify-content: center;
         align-items: center;
@@ -732,19 +732,38 @@ body{
         padding-top: 5%;
     }
 
-    .ffkontakt{ 
-        background-image: url(images/beigemobil.png);
+    /*.ffkontakt{ 
+        background-image: url(images/mobilbeige.png);
         background-repeat: no-repeat;
         background-size: cover;
         width: 90%;
         margin-left: 1.5rem;
         padding-bottom: 13rem;
         flex-direction: column;
+        text-align: center;
+    }*/
+
+    .ffkontakt{
+        background-image: url(images/mobilbeige.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 90%;
+        margin-left: 1.5rem;
+        display: block;
+        height: 40rem;
+        text-align: center;
+        padding-bottom: 50rem;
     }
+
     .ffkontakt div img{
         justify-content: center;
         align-items: center;
-        margin-left: 30%;
+        margin-left: 5%;
+    }
+
+    .ffkontakt section{
+        margin-left: 3rem;
+        margin-top: -20%;
     }
 
     .ff3 section{
@@ -755,6 +774,7 @@ body{
         padding-left: 3rem;
         margin-top: 3rem
     }
+
     .ff3{
         background-image: url(images/ny3.png);
         background-repeat: no-repeat;
