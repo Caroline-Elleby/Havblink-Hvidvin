@@ -68,7 +68,6 @@
 }
 
 
-
 /*Hjerteikoner over billeder*/
 .hjerte{
     position: absolute;
@@ -124,13 +123,6 @@
 
 
 
-
-
-
-
-
-
-
 @media screen and (max-width:600px) {
     #anbefalinger1{
         margin-top: 32rem;
@@ -146,7 +138,5 @@
    #anbefalinger1 img{
     width: 100%;
    }
-
-
     
 }

@@ -275,7 +275,7 @@ body{
 }
 
 .ff section{
-    padding-top: 7%;
+    padding-top: 2%;
     padding-bottom: 4%;
     padding-left: 5%;
     width: 40%;
@@ -620,10 +620,178 @@ body{
 
 
                                         /*Mobil*/
-@media screen {
-    /*Forside*/
+@media screen and (max-width:600px) {
+    /*Forside*/ 
+    .forsidevideo{
+        height: 20vh;
+    }
+    .knap3{
+        margin-left: 10%;
+    }   
+
+    .anmeldelser{
+        display: block;
+        width: 88%;
+    }
+    .anmeldelser div h2{
+        text-align: center;
+        width: 85%;
+    }
+
+    .anmeldelser img{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .anmeldelser div img{
+        display: none;
+    }
+
+    /*resten undersider*/
+
+    .overskrift section{
+        flex-direction: column;
+        margin-top: -10%;
+    }
+    .overskrift a:hover{
+        display: none;
+    }
+    .overskrift div{       
+        background-color: #c9b8a4;
+        border-radius: 15rem;
+        padding: 1rem 3rem;
+        width: 50%;
+        margin-left: 8rem;
+        margin-bottom: -5%;
+    }
+
+    .overskrift a{
+        font-size: 15px;
+    }
+    
+
+
 
     /*ff afsnits*/
+    .ff, .ff11, .ff2, .ffgrøn, .ffbrun, .ffblå, .ffbrun2, .ffværdier, .ffmission, .ffvision, .ffblå2, .ffkontakt{
+        display: block;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .ff, .ff11, .ffværdier{
+        background-image: url(images/Frame\ 63.png);
+        width: 100%;
+        height: 50rem;
+        padding-bottom: 50rem;
+    }
+
+    .ffvision{
+        background-image: url(images/Frame\ 63.png);
+        width: 100%;
+        height: 55rem;
+        padding-bottom: 50rem;
+    }
+
+    .ff section, .ff11 section, .ffgrøn section, .ffblå section, .ffbrun2 section, .ffværdier section, .ffvision section, .ffblå2 section{
+        margin-top: 4rem;
+        width: 95%;
+    }
+
+    .ffbrun section, .ffmission section{
+        width: 100%;
+        margin-bottom: 4rem;
+    }
+
+    .ff2, .ffmission{
+        background-image: url(images/Frame\ 63mørk.png);
+        width: 100%;
+    }
+
+    .ff2 section{
+        width: 100%;
+    }
+
+    .ff2 div img, .ffmission div img{
+        width: 200%;
+        justify-content: center;
+        align-items: center;
+        margin-left: 3.5rem;
+        margin-top: 4rem;
+    }
+    .ff div img, .ff11 div img, .ffværdier div img, .ffvision div img{
+        width: 200%;
+        justify-content: center;
+        align-items: center;
+        margin-left: 4.5rem;
+    }
+
+    .ffgrøn div img, .ffbrun div img, .ffblå div img, .ffbrun2 div img, .ffblå2 div img{
+        width: 150%;
+        margin-left: 4rem;
+        padding-top: 5%;
+    }
+
+    .ffkontakt{ 
+        background-image: url(images/beigemobil.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 90%;
+        margin-left: 1.5rem;
+        padding-bottom: 13rem;
+        flex-direction: column;
+    }
+    .ffkontakt div img{
+        justify-content: center;
+        align-items: center;
+        margin-left: 30%;
+    }
+
+    .ff3 section{
+        display: block;
+        justify-content: center;
+        text-align: center;
+        margin-left: 1rem;
+        padding-left: 3rem;
+        margin-top: 3rem
+    }
+    .ff3{
+        background-image: url(images/ny3.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 90%;
+        margin-left: 1.5rem;
+        display: block;
+        height: 40rem;
+        text-align: center;
+    }
+
+    .knap3{
+        margin-left: 1.5rem;
+    }
+
+
 
     /*Kanpper*/
+    
+    .knap, .knap2, .knap3{
+        justify-content: center;
+        align-items: center;
+        padding-left: 2rem;
+    }
+    
+    .knap a, .knap2 a, .knap3 a{
+        transition: none;
+        transform: none;
+    }
+    .knap a:hover, .knap2 a:hover, .knap3 a:hover{
+        background-color: #06550c;
+        transition: none;
+        transform: none;
+    }
+
+    .knap:hover, .knap2:hover, .knap3:hover{
+        transition: none;
+        transform: none;
+    }
 }

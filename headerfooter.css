@@ -29,7 +29,7 @@ header{
     display: flex; 
     justify-content: space-between; 
     align-items: center;
-    background-color: #F8eee1; /*header baggrundsfarven*/
+    background-color: rgb(248, 238, 225, 0.7); /*header baggrundsfarven*/
     position: sticky; /*headeren er sticky*/
     top: 0; /*ikke noget whitespace mellem header og toppen af siden*/
     justify-content: center;
@@ -171,6 +171,111 @@ nav .dropdown-content li a {
 
 
 
+#menu-toggle{
+    display: none; /* Hide the checkbox by default */
+}
+
+
+#burger, #logomobil{
+    width:50px;
+    height: 50px;
+    display: none;
+    margin-right: 4%;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    z-index: 10;
+}
+
+#mobile-nav{
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 48px; 
+    right: 0;
+    width: 40%;
+    height: 65vh;
+    background-color: rgb(228, 212, 191,0.9); 
+    z-index: 8; 
+    padding: 20px 10px;
+    box-shadow: 0 8px 4px rgba(0, 0, 0, 0.2);
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #016b08 #ffffff;
+}
+#mobile-nav a{
+    width: 100%;
+    text-align: right;
+}
+
+#menu-toggle:checked + label + #mobile-nav {
+    display: flex; 
+}
+
+#mobile-nav ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: right;
+}
+
+#mobile-nav ul .værksteder-dropdown{
+    display: none;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    text-align: right;
+}
+
+#mobile-nav ul .værksteder-dropdown li{
+    margin: 0;
+    padding: 10px 0;
+}
+
+#mobile-nav ul .værksteder-dropdown li a{
+    text-decoration: none;
+    color:#000000;
+    text-shadow: #989595 2px 2px 2px;
+    font-family: 'InterMedium', sans-serif;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    display: block;
+    padding: 10px 0;
+}
+
+#værksteder-toggle:checked + label + .værksteder-dropdown {
+    display: flex; /* Show the dropdown when the checkbox is checked */
+}
+
+#mobile-nav li{
+    margin: 10px 0;
+    width: 100%;
+}
+
+#mobile-nav li a, #mobile-nav label[for="værksteder-toggle"]{
+    text-decoration: none;
+    color:#000000;
+    font-family: 'InterBold', sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    display: block;
+    padding: 10px 0;
+    width: 100%;
+}
+
+#mobile-nav label[for="værksteder-toggle"]{
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
 
 /**/
 
@@ -234,4 +339,56 @@ footer h2{
     flex-direction: row;
     aspect-ratio: 3/2;
     object-fit: contain;    
+}
+
+
+
+@media screen and (max-width:600px){
+     header{
+        padding-left: 20px;
+        padding-right: 20px;
+        height: 3rem;
+    }
+    header a:hover{
+        text-shadow: none;
+        transition: none; 
+    }
+    #laptopnav{
+        display: none;
+    }
+    #burger{
+        display: block;
+        margin-top: 1rem;
+    }  
+    #logomobil{
+        display: block;
+        margin-top: 2rem;
+        justify-content: space-between;
+        padding-right: 20rem;
+    }
+
+    footer div{
+        display: flex;
+        flex-direction: column;
+        margin-left: -20%;
+    }
+
+    #socialmedia{
+        margin-left: 10%;
+    }
+
+    #økomærker{
+        flex-direction: row;
+        margin-left: 90%;
+    }
+
+
+
+
+
+
+
+
+
+
 }
