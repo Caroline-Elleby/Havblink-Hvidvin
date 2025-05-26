@@ -90,7 +90,7 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    gap: 2rem; /* eller brug fx: gap: 5%; hvis du vil have procentbaseret afstand */
+    gap: 2rem; 
 }
 
 .overskrift section div {
@@ -113,7 +113,7 @@ body{
 }
 
 
-.overskrift a::after {/* Stregen under links */
+.overskrift a::after {/* Hover-stregen under links */
     content: '';
     position: absolute;
     bottom: -5px;
@@ -130,39 +130,6 @@ body{
 .overskrift a:hover::after {/* Hovereffekt: glider ind */
     transform: scaleX(1);
 }
-
-
-#anbefalinger1{ /*Forside .anbefalinger*/
-    margin-top: 15%;
-    width: 100%;
-    display: flex;
-    padding: 2rem;
-}
-#anbefalinger1 section h2, #anbefalinger section h2{
-    font-size: 1.5rem;
-    
-}
-
-#anbefalinger1 div, #anbefalinger div{
-    display: flex;
-}
-
-#anbefalinger1 img, #anbefalinger img{
-    width: 100%;
-    padding: 1rem;
-}
-.apil1, .apil{
-    width: 10%;
-    padding-top: 7.2rem;
-}
-
-#anbefalinger{ /*.anbefalinger på Gode Dryp og Druer*/
-    margin-top: 5%;
-    width: 100%;
-    display: flex;
-    padding: 2rem;
-} 
-
 
 .anmeldelser{
     display: flex;
@@ -209,13 +176,15 @@ body{
     display: flex;
     padding-top: 10%;
     padding-bottom: 10%;
-    margin-left: 3rem;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5%;
 }
 
-#typer section h2{
+#typer div h2{
     font-size: 1.5rem;
-    flex-direction: column;
     text-align: center;
+    flex-direction: column;
 }
 #typer p{
     text-align: center;
@@ -226,17 +195,20 @@ body{
     width: 100%;
     align-items: center;
     justify-content: space-between;
-    gap: 1rem;
-    
+    gap: 1rem; 
 }
 
 .typerafsnit{
     flex-direction: column;
+    justify-content: center;
 }
 
 #typer img{
     width: 70%;
-    margin-left: 3rem;
+    justify-content: center;
+    align-items: center;
+    margin-left: 15%;
+    
 }
 
 #typer .knap{ /*Se vin - knap*/     
@@ -266,7 +238,7 @@ body{
 
         /*ALLE fittyfitty afsnit*/   /*Først de enkeltes regler, derefter fællesregler */
 .ff{
-    background-image: url(images/lysbølge3.png);
+    background-image: url(imagesweb/lysbølge3.webp);
     background-repeat: no-repeat;
     background-size: cover;
     padding-bottom: 7rem;
@@ -288,7 +260,7 @@ body{
 .ff3{ /*Quiz afsnit*/
     display: flex;
     width: 90%;
-    background-image: url(images/quizbølge.png);
+    background-image: url(imagesweb/quizbølge.webp);
     background-repeat: no-repeat;
     background-size: contain; /*Hele elipsen kan ses*/
     padding-bottom: 7rem;
@@ -317,7 +289,7 @@ body{
 }
 
 .ff11{
-    background-image: url(images/lysbølge2.png); /*lysbølge2 er lidt større end lysbølge3*/
+    background-image: url(imagesweb/lysbølge2.webp); /*lysbølge2 er lidt større end lysbølge3*/
     background-repeat: no-repeat;
     background-size: cover;
     padding-bottom: 7rem;
@@ -326,7 +298,7 @@ body{
 }
 
 .ff2{
-    background-image: url(images/elipsebeigeforsøg4.png); /*Mørk beige bølge*/
+    background-image: url(imagesweb/elipsebeigeforsøg4.webp); /*Mørk beige bølge*/
     background-repeat: no-repeat;
     background-size: cover;
     padding-top: 5%;
@@ -390,7 +362,7 @@ body{
 }
 
 .ffsie{
-    background-image: url(images/elipsebeigeforsøg4.png);
+    background-image: url(imagesweb/elipsebeigeforsøg4.webp);
     background-repeat: no-repeat;
     background-size: cover;
     padding-bottom: 7rem;
@@ -422,7 +394,7 @@ body{
 
             /*Fælles regler for 50/50*/
 .ffværdier, .ffvision, .ffjohan{
-    background-image: url(images/lysbølge2.png);
+    background-image: url(imagesweb/lysbølge2.webp);
     background-repeat: no-repeat;
     background-size: cover;
     padding-bottom: 7rem;
@@ -439,7 +411,7 @@ body{
 }
 
 .ffmission, .ffkontakt{
-    background-image: url(images/elipsebeigeforsøg4.png);
+    background-image: url(imagesweb/elipsebeigeforsøg4.webp);
     background-repeat: no-repeat;
     background-size: cover;
     padding-top: 5%;
@@ -668,6 +640,31 @@ body{
     .overskrift a{
         font-size: 15px;
     }
+
+    #typer{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+    }
+
+    #typercontainer{
+        flex-wrap: wrap;
+        width: 100%;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .typerafsnit{
+        width: 20%;
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+
+    #typer .knap{
+        margin-left: -1.5rem; 
+    }
     
 
 
@@ -680,14 +677,14 @@ body{
         width: 100%;
     }
     .ff, .ff11, .ffværdier{
-        background-image: url(images/Frame\ 63.png);
+        background-image: url(imagesweb/Frame\ 63.webp);
         width: 100%;
         height: 50rem;
         padding-bottom: 50rem;
     }
 
-    .ffvision, .ffjohan{
-        background-image: url(images/Frame\ 63.png);
+    .ffvision, .ffjohan{ /*Samme som ovenover?*/
+        background-image: url(imagesweb/Frame\ 63.webp);
         width: 100%;
         height: 55rem;
         padding-bottom: 50rem;
@@ -704,7 +701,7 @@ body{
     }
 
     .ff2, .ffmission, .ffsie{
-        background-image: url(images/Frame\ 63mørk.png);
+        background-image: url(imagesweb/Frame\ 63mørk.webp);
         width: 100%;
     }
 
@@ -732,27 +729,20 @@ body{
         padding-top: 5%;
     }
 
-    /*.ffkontakt{ 
-        background-image: url(images/mobilbeige.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        width: 90%;
-        margin-left: 1.5rem;
-        padding-bottom: 13rem;
-        flex-direction: column;
-        text-align: center;
-    }*/
 
     .ffkontakt{
-        background-image: url(images/mobilbeige.png);
+        display: flex;
+        background-image: url(imagesweb/mobilbeige.webp);
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: contain;
         width: 90%;
-        margin-left: 1.5rem;
-        display: block;
-        height: 40rem;
+        flex-direction: column;
+        height: 55rem;
         text-align: center;
-        padding-bottom: 50rem;
+        justify-content: center;
+        align-items: center;
+        margin: 5%;
+        margin-top: 30%;
     }
 
     .ffkontakt div img{
@@ -762,32 +752,34 @@ body{
     }
 
     .ffkontakt section{
-        margin-left: 3rem;
-        margin-top: -20%;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        text-align: center;
+        padding: 15%;   
     }
 
     .ff3 section{
         display: block;
         justify-content: center;
         text-align: center;
-        margin-left: 1rem;
-        padding-left: 3rem;
-        margin-top: 3rem
+        width: 100%;
+        padding: 15%
     }
 
     .ff3{
-        background-image: url(images/ny3.png);
+        background-image: url(imagesweb/ny3.webp);
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: contain;
         width: 90%;
-        margin-left: 1.5rem;
+        margin: 7%;
         display: block;
         height: 40rem;
         text-align: center;
     }
 
     .knap3{
-        margin-left: 1.5rem;
+        margin-left: 2%;
     }
 
 

@@ -102,21 +102,6 @@ nav .dropdown:hover .dropdown-content {
     display: block;
 }
 
-
-/* Skjul dropdown menuen som default *//*
-nav .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #FCB9B5;
-    min-width: 160px;
-    z-index: 4;
-}
-*/
-
-
-
-
-
                                     
 nav ul {
     list-style-type: none;
@@ -202,6 +187,7 @@ nav .dropdown-content li a {
     scrollbar-width: thin;
     scrollbar-color: #016b08 #ffffff;
 }
+
 #mobile-nav a{
     width: 100%;
     text-align: right;
@@ -277,7 +263,7 @@ nav .dropdown-content li a {
 
 
 
-/**/
+                            /*FOOTER*/
 
 
 footer{

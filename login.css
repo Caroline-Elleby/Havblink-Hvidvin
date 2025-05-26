@@ -76,14 +76,14 @@
     margin-top: 19.6%;
 }
 .hjerte{
-    margin-left: 15%;
+    margin-left: 15%; /*Placering på billedet*/
 }
 
 
 
 
 
-#anbefalinger1{ /*Forside .anbefalinger*/
+#anbefalinger1{ /*Fra forside .anbefalinger*/
     margin-top: 45%;
     width: 100%;
     display: flex;
@@ -124,19 +124,65 @@
 
 
 @media screen and (max-width:600px) {
-    #anbefalinger1{
-        margin-top: 32rem;
-    }
-
     #info img{
         width: 3%;
     }
-   .apil{
-    width: 70%;
-    padding-top: 1rem;
-   }
-   #anbefalinger1 img{
-    width: 100%;
-   }
+
+    #info section a:hover, .indstillinger h2:hover{
+        transform: none;
+        transition: none;
+    }
     
+
+   #anbefalinger1{
+        flex-direction: column;
+        margin-top: 32rem
+    }
+
+    .apil{
+        display: none;
+        width: 0%;
+        height: 0%;
+    }
+
+    #anbefalingsknap{
+        display: block;
+        width: 40%;
+        margin-left: 60%;
+    }
+    
+    #anbefalingsknap a{
+        display: block;
+        align-items: center;
+        text-align: center;
+    }
+    
+    #container{
+        overflow-x: auto;
+        margin: 0;
+        padding: 0;
+        white-space: wrap;
+        scroll-behavior: smooth;
+        overflow-y: hidden;
+        width: 100%;
+        justify-content: space-evenly;
+        scrollbar-color: #016b08 #ffffff;
+    }
+
+    
+    .favorikort{
+        width: 50%;
+        flex: 0 0 auto;  
+        padding-bottom: 5%;    
+    }
+
+    .favorikort img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .favorikort:hover{
+        transform: none;
+        transition: none;
+    }
 }
