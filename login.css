@@ -74,9 +74,7 @@
     z-index: 0;
     width: 6%;
     margin-top: 19.6%;
-}
-.hjerte{
-    margin-left: 15%; /*Placering på billedet*/
+    margin-left: 15%;
 }
 
 
@@ -118,6 +116,24 @@
 .favorikort:hover{
     transition: transform 0.3s ease;
     transform: scale(1.03);
+}
+
+#anbefalingsknap{
+    display: none;
+    border: #06550c solid 2px;
+    border-radius: 15rem;
+    justify-content: center;
+}
+
+#anbefalingsknap a{
+    display: none;
+    color: #06550c;
+    text-decoration: none;
+    padding: 1rem 1rem;
+    font-family: 'InterRegular', sans-serif; 
+    font-size: 13px;
+    text-align: center;
+    white-space: nowrap;
 }
 
 
@@ -184,5 +200,10 @@
     .favorikort:hover{
         transform: none;
         transition: none;
+    }
+
+    div .hjerte{
+        display: none !important; /*Det ville ikke forsvide uden important. Hjerterne var ikke synlige, men der kom horisontal-scrollbar, som om de stadig var der. */
+       
     }
 }
